@@ -3,11 +3,6 @@ title: Downloads
 layout: page
 ---
 
-{% for release in  site.github.releases %} 
-{% if release.draft != true and release.prerelease != true %}
-- **{{ release.name }}**
-    - {% for asset in release.assets %}[{{asset.name}}]({{ asset.browser_download_url }}) \| Size: {% include filesize.html number=asset.size %} \| Date: {% if asset.created_at  %}{{ asset.created_at | date_to_string }} {% else %} N/A {% endif %}{% endfor %}
-    {% endif %}
-{% endfor %}
+The latest release can be downloaded from [here](https://github.com/ASStoredProcedures/ASStoredProcedures/releases/latest)
 
-> The github releases page can be accessed [here](https://github.com/ASStoredProcedures/ASStoredProcedures/releases)
+The full list of prior releases page can be accessed from the [github releases page](https://github.com/ASStoredProcedures/ASStoredProcedures/releases)
