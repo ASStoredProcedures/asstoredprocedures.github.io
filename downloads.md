@@ -2,7 +2,7 @@
 title: Downloads
 layout: page
 ---
- 
+
 {% for release in  site.github.releases %} 
 {% if release.draft != true and release.prerelease != true %}
 - **{{ release.name }}**
@@ -10,4 +10,4 @@ layout: page
     {% endif %}
 {% endfor %}
 
-> Prior versions can be found on the old codeplex site at [http://asstoredprocedures.codeplex.com](http://asstoredprocedures.codeplex.com)
+> The github releases page can be accessed [here](https://github.com/ASStoredProcedures/ASStoredProcedures/releases)
